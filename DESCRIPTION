@@ -9,3 +9,5 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Imports: dplyr, Seurat, stringr, RColorBrewer, pheatmap, ggplot2, fgsea, graphite, lsa, devtools, data.table, geneconverter, circlize, tidyverse
 RoxygenNote: 7.2.3
+URL: https://github.com/yingxinac/LigScape
+BugReports: https://github.com/yingxinac/LigScape/issues
