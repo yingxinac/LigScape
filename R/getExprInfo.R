@@ -49,6 +49,7 @@ getExprInfo <- function(seuratobj, cls, conds, condpairs, testmethod = "wilcox")
     colnames(pct_expr) = conds
     for (i in 1:length(conds)) {
       subnormdata = normdata[,WhichCells(myobj, idents = conds[i]),drop=FALSE]
+      subnormdata = as.matrix(subnormdata)
       if (ncol(subnormdata) > 0) {
         pct_expr[,i] = rowSums(subnormdata > 0)/ncol(subnormdata)
       }
