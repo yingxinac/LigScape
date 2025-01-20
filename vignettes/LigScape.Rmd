@@ -146,7 +146,7 @@ plotDELRheatmap(exprinfo = exprinfo, siggroups = siggroups, lr_network = lr_netw
 ```
 
 <div align="center">
-<img src="DELs.tiff" width="300" height = "800"/><img src="DERs.tiff" width="300" height = "800"/>
+<img src="DELs.png" width="300" height = "500"/><img src="DERs.png" width="300" height = "500"/>
 </div>
 
 
@@ -156,7 +156,7 @@ getKEGGNESbarplot(mysig = mysiglist[[cl_to]][[condpair]], padj.cut = 0.1)
 ```
 
 <div align="center">
-<img src="NESbar.tiff" width="400" height = "300"/>
+<img src="NESbar.png" width="400" height = "250"/>
 </div>
 
 **For identified LR-interactions, plot the average expression of the ligands in sender cells in each condition, average expression of the receptors in specified receiver cells in each condition, and the corresponding ligand scores calculated by LigScape signatures**
@@ -178,7 +178,7 @@ plotLRs(LRinfolist = LRinfolist, LRs = LRinfo_fil$lrs_fil_union, cls_from = allc
 ```
 
 <div align="center">
-<img src="LRI_Lavg.tiff" width="300" height = "300"/><img src="LRI_Lscore.tiff" width="120" height = "300"/><img src="LRI_Ravg.tiff" width="150" height = "300"/>
+<img src="LRI_Lavg.png" width="300" height = "300"/><img src="LRI_Lscore.png" width="120" height = "300"/><img src="LRI_Ravg.png" width="150" height = "300"/>
 </div>
 
 **circos plot** 
@@ -196,7 +196,7 @@ getCircosPlot(plotLRinfolist = LRinfo_fil2$LRinfolist_fil, plotcond = "condmax",
 ```
 
 <div align="center">
-<img src="circos.tiff" width="400" height = "400"/>
+<img src="circos.png" width="500" height = "500"/>
 </div>
 
 
