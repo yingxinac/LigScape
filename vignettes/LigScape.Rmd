@@ -1,6 +1,6 @@
 ---
 title: "Perform LigScape analysis"
-output: rmarkdown::html_vignette
+output: md_document
 vignette: >
   %\VignetteIndexEntry{LigScape}
   %\VignetteEngine{knitr::rmarkdown}

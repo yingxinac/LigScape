@@ -40,6 +40,6 @@ devtools::install_github("yingxinac/LigScape")
 <hr>
 
 ### Using LigScape
-[Example: Perform LigScape analysis](LigScape.html)
+[Example: Perform LigScape analysis](vignettes/LigScape.md)
 
 
