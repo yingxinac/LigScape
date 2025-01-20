@@ -6,13 +6,7 @@
 
 LigScape is a full-featured R package for analyzing cell-cell communication from bulk & single-cell RNA-seq data
 
-<hr>
-
-<div  align="center">
-<img src="https://github.com/yingxinac/LigScape/blob/main/Figures/Fig1b.pdf" width = "850" height = "350" alt="LigScape" align=center />
-</div>
-
-<hr>
+![LigScape](https://github.com/yingxinac/LigScape/blob/main/Figures/Fig1b.pdf)
 
 ### Installation
 
