@@ -11,3 +11,7 @@ Imports: dplyr, Seurat, stringr, RColorBrewer, pheatmap, ggplot2, fgsea, graphit
 RoxygenNote: 7.2.3
 URL: https://github.com/yingxinac/LigScape
 BugReports: https://github.com/yingxinac/LigScape/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
