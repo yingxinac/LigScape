@@ -48,9 +48,9 @@ getExprInfo <- function(seuratobj, cls, conds, condpairs, testmethod = "wilcox")
     rownames(pct_expr) = rownames(normdata)
     colnames(pct_expr) = conds
     for (i in 1:length(conds)) {
-      subnormdata = normdata[,WhichCells(myobj, idents = conds[i]), drop=F]
+      subnormdata = normdata[,WhichCells(myobj, idents = conds[i]),drop=FALSE]
       if (ncol(subnormdata) > 0) {
-        pct_expr[,i] = rowSums(subnormdata>0)/ncol(subnormdata)
+        pct_expr[,i] = rowSums(subnormdata > 0)/ncol(subnormdata)
       }
     }
     DEinfolist = list()
