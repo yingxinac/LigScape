@@ -39,6 +39,12 @@ devtools::install_github("yingxinac/LigScape")
 
 <hr>
 
+### Database
+LigScape database is available at
+[LigScapeData](https://github.com/yingxinac/LigScapeData/)
+
+<hr>
+
 ### Using LigScape
 [Example: Perform LigScape analysis](vignettes/LigScape.md)
 
