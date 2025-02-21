@@ -15,7 +15,7 @@ Using the LigScape database as a reference, we developed a companion computation
 <hr>
 
 <div  align="center">
-<img src="Figures/fig1.png" width = "850" height = "350" alt="LigScape" align=center />
+<img src="Figures/fig1v2.png" width = "850" height = "350" alt="LigScape" align=center />
 </div>
 
 <hr>
