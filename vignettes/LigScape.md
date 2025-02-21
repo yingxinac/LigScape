@@ -11,6 +11,9 @@
     library(geneconverter) 
     library(circlize)
     library(tidyverse)
+    library(randomcoloR)
+    library(hrbrthemes)
+    library(ggrepel)
     library(LigScape)
     `%!in%` <- Negate(`%in%`)
     `%notin%` <- Negate(`%in%`)
@@ -142,10 +145,18 @@ in each cell-type/cluster, each condition, in heatmap**
 
 <img src="NESbar.png" width="400" height = "250"/>
 
+**For ligands in identified LR interactions, create scatterplot of specified ligand scores and the maximum avgexpr levels acorss all sender cells and conditions**
+
+    getScatter(LRinfolist = LRinfolist, LRs = LRinfo_fil$lrs_fil_union, cls_from = allcls, cl_to = cl_to, condpair = condpair, 
+           Lscore.by = "Lscore_max", point.size = 3)
+    # Remark: Lscore.by can be any of "Lscore_mean", "Lscore_median", "Lscore_max", "Lscore_min", "Lscore_max_abs", and "Lscore_signed_maxabs".
+
+<img src="Lscoremax_Lexprmax_scatter.png" width="600" height = "400"/>
+
 **For identified LR-interactions, plot the average expression of the
 ligands in sender cells in each condition, average expression of the
 receptors in specified receiver cells in each condition, and the
-corresponding ligand scores calculated by LigScape signatures**
+corresponding ligand scores**
 
     col = rev(colorRampPalette(brewer.pal(3, "RdBu"))(1000))
     plotLRs(LRinfolist = LRinfolist, LRs = LRinfo_fil$lrs_fil_union, cls_from = allcls, cl_to = cl_to, condpair = condpair, plotwhich = "Lavgexpr",
