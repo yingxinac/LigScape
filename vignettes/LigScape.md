@@ -108,6 +108,15 @@ LigScape data can be downloaded at
     LRinfolist = getLRinfosummary(exprinfo = exprinfo, LRIscorelist = LRIscorelist, Lscoredf = Lscoredf, lr_network = lr_network, 
                                   cl_to = cl_to, condpair = condpair)
     # Remark: in the matrics of the output lis, "condmax" in the column names represents maximum values across conditions.
+    
+**Get scatter plot of specified ligand scores and LR-interactoin scores (maximum from all sender cells) for LR pairs with these scores available**
+
+    getScatterLRpairs(LRinfolist = LRinfolist, cls_from = allcls, cl_to = cl_to, Lscore.by = "Lscore_signed_maxabs", SLRI.by = "SLRI_condmax",
+                  point.size = 3, Lscore.cut = 0.1, SLRI.cut = 0.3)
+    # Remark: Lscore.by specifies which ligand score to plot, can be any of "Lscore_mean", "Lscore_median", "Lscore_max", "Lscore_min", "Lscore_max_abs", and "Lscore_signed_maxabs".
+    Similarly, SLRI.by specifies which LR-interaction score to plot.
+
+<img src="Scatterall_Lscore_SLRI_v2.png" width="600" height = "400"/>
 
 ### Filter the LR-interactions
 
@@ -148,10 +157,10 @@ in each cell-type/cluster, each condition, in heatmap**
 **For ligands in identified LR interactions, create scatterplot of specified ligand scores and the maximum avgexpr levels acorss all sender cells and conditions**
 
     getScatter(LRinfolist = LRinfolist, LRs = LRinfo_fil$lrs_fil_union, cls_from = allcls, cl_to = cl_to, condpair = condpair, 
-           Lscore.by = "Lscore_max", point.size = 3)
+           Lscore.by = "Lscore_signed_maxabs", point.size = 3)
     # Remark: Lscore.by can be any of "Lscore_mean", "Lscore_median", "Lscore_max", "Lscore_min", "Lscore_max_abs", and "Lscore_signed_maxabs".
 
-<img src="Lscoremax_Lexprmax_scatter.png" width="600" height = "400"/>
+<img src="Lscoremax_Lexprmax_scatter_v2.png" width="600" height = "400"/>
 
 **For identified LR-interactions, plot the average expression of the
 ligands in sender cells in each condition, average expression of the

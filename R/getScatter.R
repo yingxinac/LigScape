@@ -65,7 +65,7 @@ getScatter <- function(LRinfolist, LRs, cls_from, cl_to, condpair, Lscore.by = "
     theme(axis.title.x = element_text(size = rel(2), angle = 00)) +
     scale_color_manual(values= mycols) +
     guides(col=guide_legend(title="Ligand maxExpr")) +
-    labs(x="Ligand score", y="Ligand expression (max)", title="") +
+    labs(x="Lignature score", y="Ligand expression (max)", title="") +
     theme(axis.text = element_text(size = 15)) +
     theme(legend.text = element_text(size = 15)) +
     theme(axis.title = element_text(size = 10)) +
